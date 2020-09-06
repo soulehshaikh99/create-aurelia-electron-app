@@ -214,7 +214,7 @@ $ yarn add electron-serve # or npm i electron-serve
 
 [favicon.png](https://raw.githubusercontent.com/soulehshaikh99/assets/master/framework-icons/aurelia/favicon.png) and place it in the static directory.
 
-#### 9) Add `outputDir` configuration in `aurelia_project/aurelia.json`
+#### 9) Add `output` configuration in `aurelia_project/aurelia.json`
 
 ```bash
 # aurelia_project/aurelia.json
