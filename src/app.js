@@ -1,3 +1,3 @@
 export class App {
-  message = 'Hello World!';
+  message = 'Welcome to Aurelia JS Electron App!';
 }
