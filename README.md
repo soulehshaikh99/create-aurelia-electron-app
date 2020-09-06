@@ -66,23 +66,23 @@ $ yarn electron-pack # or npm run electron-pack
 
 ### 💫 Create this boilerplate from scratch (Manual Setup)
 
-#### 1) Start by installing @gridsome/cli globally
+#### 1) Start by installing aurelia-cli globally
 
 ```bash
-$ yarn global add @gridsome/cli
-# npm i -g @gridsome/cli
+$ yarn global add aurelia-cli
+# npm i -g aurelia-cli
 ```
 
-#### 2) Create a gridsome project using @gridsome/cli
+#### 2) Create a aurelia project using aurelia-cli
 
 ```bash
-$ gridsome create create-gridsome-electron-app
+$ au new create-aurelia-electron-app
 ```
 
 #### 3) Switch to project directory
 
 ```bash
-$ cd create-gridsome-electron-app
+$ cd create-aurelia-electron-app
 ```
 
 #### 4) Move all dependencies to devDependencies using IDE / Text Editor
@@ -90,7 +90,51 @@ $ cd create-gridsome-electron-app
 ```bash
 "dependencies": {},
 "devDependencies": {
-  "gridsome": "^0.7.0"
+  "@babel/core": "^7.11.1",
+  "@babel/plugin-proposal-class-properties": "^7.10.4",
+  "@babel/plugin-proposal-decorators": "^7.10.5",
+  "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+  "@babel/preset-env": "^7.11.0",
+  "@babel/register": "^7.10.5",
+  "app-settings-loader": "^1.0.6",
+  "aurelia-animator-css": "^1.0.4",
+  "aurelia-bootstrapper": "^2.3.3",
+  "aurelia-cli": "^2.0.0",
+  "aurelia-loader-nodejs": "^1.1.0",
+  "aurelia-pal-nodejs": "^2.0.0",
+  "aurelia-testing": "^1.0.0",
+  "aurelia-webpack-plugin": "^4.0.0",
+  "babel-eslint": "^10.1.0",
+  "babel-jest": "^26.3.0",
+  "babel-loader": "^8.1.0",
+  "babel-plugin-istanbul": "^6.0.0",
+  "clean-webpack-plugin": "^3.0.0",
+  "copy-webpack-plugin": "^6.0.3",
+  "css-loader": "^4.2.1",
+  "duplicate-package-checker-webpack-plugin": "^3.0.0",
+  "eslint": "^7.7.0",
+  "expose-loader": "^1.0.0",
+  "file-loader": "^6.0.0",
+  "gulp": "^4.0.2",
+  "gulp-eslint": "^6.0.0",
+  "html-loader": "^1.1.0",
+  "html-webpack-plugin": "^4.3.0",
+  "istanbul-instrumenter-loader": "^3.0.1",
+  "jest": "^26.4.0",
+  "jest-cli": "^26.4.0",
+  "jest-transform-stub": "^2.0.0",
+  "json-loader": "^0.5.7",
+  "mini-css-extract-plugin": "^0.10.0",
+  "minimatch": "^3.0.4",
+  "promise-polyfill": "^8.1.3",
+  "regenerator-runtime": "^0.13.7",
+  "style-loader": "^1.2.1",
+  "tree-kill": "^1.2.2",
+  "url-loader": "^4.1.0",
+  "webpack": "^4.44.1",
+  "webpack-bundle-analyzer": "^3.8.0",
+  "webpack-cli": "^3.3.12",
+  "webpack-dev-server": "^3.11.0"
 }
 ```
 
@@ -114,28 +158,76 @@ $ yarn add electron-serve # or npm i electron-serve
   "electron-serve": "^1.0.0"
 },
 "devDependencies": {
+  "@babel/core": "^7.11.1",
+  "@babel/plugin-proposal-class-properties": "^7.10.4",
+  "@babel/plugin-proposal-decorators": "^7.10.5",
+  "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+  "@babel/preset-env": "^7.11.0",
+  "@babel/register": "^7.10.5",
+  "app-settings-loader": "^1.0.6",
+  "aurelia-animator-css": "^1.0.4",
+  "aurelia-bootstrapper": "^2.3.3",
+  "aurelia-cli": "^2.0.0",
+  "aurelia-loader-nodejs": "^1.1.0",
+  "aurelia-pal-nodejs": "^2.0.0",
+  "aurelia-testing": "^1.0.0",
+  "aurelia-webpack-plugin": "^4.0.0",
+  "babel-eslint": "^10.1.0",
+  "babel-jest": "^26.3.0",
+  "babel-loader": "^8.1.0",
+  "babel-plugin-istanbul": "^6.0.0",
+  "clean-webpack-plugin": "^3.0.0",
   "concurrently": "^5.3.0",
+  "copy-webpack-plugin": "^6.0.3",
+  "css-loader": "^4.2.1",
+  "duplicate-package-checker-webpack-plugin": "^3.0.0",
   "electron": "^10.1.1",
   "electron-builder": "^22.8.0",
-  "gridsome": "^0.7.0",
-  "wait-on": "^5.2.0"
-} 
+  "eslint": "^7.7.0",
+  "expose-loader": "^1.0.0",
+  "file-loader": "^6.0.0",
+  "gulp": "^4.0.2",
+  "gulp-eslint": "^6.0.0",
+  "html-loader": "^1.1.0",
+  "html-webpack-plugin": "^4.3.0",
+  "istanbul-instrumenter-loader": "^3.0.1",
+  "jest": "^26.4.0",
+  "jest-cli": "^26.4.0",
+  "jest-transform-stub": "^2.0.0",
+  "json-loader": "^0.5.7",
+  "mini-css-extract-plugin": "^0.10.0",
+  "minimatch": "^3.0.4",
+  "promise-polyfill": "^8.1.3",
+  "regenerator-runtime": "^0.13.7",
+  "style-loader": "^1.2.1",
+  "tree-kill": "^1.2.2",
+  "url-loader": "^4.1.0",
+  "wait-on": "^5.2.0",
+  "webpack": "^4.44.1",
+  "webpack-bundle-analyzer": "^3.8.0",
+  "webpack-cli": "^3.3.12",
+  "webpack-dev-server": "^3.11.0"
+}
 ```
 
 #### 8) Download the app icon
 
-[favicon.png](https://raw.githubusercontent.com/soulehshaikh99/assets/master/framework-icons/gridsome/favicon.png) and place it in the static directory.
+[favicon.png](https://raw.githubusercontent.com/soulehshaikh99/assets/master/framework-icons/aurelia/favicon.png) and place it in the static directory.
 
-#### 9) Add `outputDir` configuration in `gridsome.config.js`
+#### 9) Add `outputDir` configuration in `aurelia_project/aurelia.json`
 
 ```bash
-# gridsome.config.js
-# This will make sure that the electron-builder and gridsome.js
+# aurelia_project/aurelia.json
+# This will make sure that the electron-builder and aurelia-cli
 # has seperate directories for output.
-module.exports = {
+{
   ...
   ...
-  outputDir: 'build'
+  "platform": {
+    ...
+    ...
+    "output": "build"
+  }
 }
 ```
 
@@ -240,17 +332,19 @@ app.on("activate", function () {
 ```bash
 # Add this scripts
 "electron": "wait-on http://localhost:8080 && electron .",
-"electron-dev": "concurrently \"yarn develop\" \"yarn electron\"",
+"electron-dev": "concurrently \"yarn run start\" \"yarn run electron\"",
 "preelectron-pack": "yarn build",
 "electron-pack": "electron-builder"
 
 # You should end up with something similar
 "scripts": {
-  "build": "gridsome build",
-  "develop": "gridsome develop",
-  "explore": "gridsome explore",
+  "build": "webpack --env.production --extractCss",
+  "start": "webpack-dev-server --extractCss",
+  "build:dev": "webpack --extractCss",
+  "analyze": "webpack --env.production --analyze",
+  "test": "au test",
   "electron": "wait-on http://localhost:8080 && electron .",
-  "electron-dev": "concurrently \"yarn develop\" \"yarn electron\"",
+  "electron-dev": "concurrently \"yarn run start\" \"yarn run electron\"",
   "preelectron-pack": "yarn build",
   "electron-pack": "electron-builder"
 }
@@ -264,7 +358,7 @@ app.on("activate", function () {
 "main": "main.js",  # Application Entry Point, please verify entry point is set to main.js
 "build": {
   "icon": "static/favicon.png",
-  "productName": "Gridsome and Electron App",
+  "productName": "Aurelia and Electron App",
   "files": [
     "build/**/*",
     "main.js"
@@ -288,13 +382,13 @@ $ yarn electron-pack # or npm run electron-pack
 ### 💯 Result
 
 <div align="center">
-<img alt="Electron Gridsome Window Screeenshot" src="https://raw.githubusercontent.com/soulehshaikh99/assets/master/create-electron-framework-app/readme/png/create-gridsome-electron-app.png" />
+<img alt="Electron Aurelia Window Screeenshot" src="https://raw.githubusercontent.com/soulehshaikh99/assets/master/create-electron-framework-app/readme/png/create-aurelia-electron-app.png" />
 </div>
 
 <h3>😍 Made with ❤️ from Souleh</h3>
-
+ 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 <br/>
 
 <h3>📋 License: </h3>
-Licensed under the <a href="https://github.com/soulehshaikh99/create-gridsome-electron-app/blob/master/LICENSE">MIT License</a>.
+Licensed under the <a href="https://github.com/soulehshaikh99/create-aurelia-electron-app/blob/master/LICENSE">MIT License</a>.
